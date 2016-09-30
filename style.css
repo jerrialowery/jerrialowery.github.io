@@ -1,0 +1,30 @@
+body{
+  background-attachment: fixed;
+  background-image: url("images/Background Image.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+i {
+   content: "";
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-size 50px 50px;
+   background: url ("images/Background Image.jpeg");
+   display: block;
+   float: left;
+   height: 150%;
+   margin-right:50px;
+   text-indent: -9999px;
+   width:100px;
+ }
+
+.box {
+  display: inline-block;
+  background: white;
+  width: 1000px;
+  float: left;
+  margin: 40px;
+  color: white;
+}
