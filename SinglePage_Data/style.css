@@ -1,0 +1,10 @@
+body {
+}
+
+h1, ol {
+  text-align: center;
+}
+
+ol {
+  list-style: none;
+}
