@@ -11,7 +11,7 @@ var json = (function () {
         },
         'error': function(jqXHR, textStatus, errorThrown) {
           // alert('Danger Danger Danger')
-          debugger
+          // debugger
           // return $("#Common_Phobias").text(jqXHR.statusText);
           return $("#Common_Phobias").text('Sorry!  There was an error requesting your data.')
         }
@@ -21,6 +21,12 @@ var json = (function () {
 
 var info = {
   "full_name": "Common_Phobias "
+
+
+}
+
+myObj = {
+  "name": "ablutophobia"
 
 }
 
