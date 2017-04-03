@@ -1,0 +1,99 @@
+h1, ol{
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #f7f298;
+
+}
+
+/*img{
+   width: 100%;
+   height: auto;
+}*/
+
+/*.systems_2 {
+  display: block;
+  margin: auto;
+
+}*/
+img {
+  display: block;
+  margin: auto;
+}
+/*.Funding_Prices{
+  width: 60%;
+  height: auto;
+}*/
+
+
+/*img.center {
+  display: block;
+  margin: 0 auto;
+}*/
+
+h2, ol{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+body {
+  color: black;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 80%;
+  width: 60%;
+}
+
+a {
+  background-color: #e7ea86; /* green */
+  border: none;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+
+}
+h3, ol{
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+  margin: 0px auto;
+  width: 500px;
+}
+
+td, th {
+  border: 2px solid #c4cca3;
+  text-align: left;
+  padding: 10px;
+}
+
+
+
+tr: nth-child(even) {
+}
+
+h5, ol{
+  text-align: Left;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+h6, ol{
+  text-align: Left;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+h4, ol{
+  text-align: Left;
+  font-family: sans-serif;
+  font-size: 20px;
+}
