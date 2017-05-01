@@ -3,7 +3,7 @@
 
 <head>
 
-  <h1> Food Environmental Atlas </h1>
+<h1> Farmers Market Data </h1>
 
   <meta charset='utf-8'/>
 
@@ -16,64 +16,56 @@
 
 <body>
 
-<nav id="menu"></nav>
-<div id="mapid"></div>
+  <nav id="menu"></nav>
+  <h2 class='legend-title'>funding Data</h2>
+  <div class='legend-scale'>
+    <ul class='legend-labels'>
+      <li><span style='background:#FFEEBC;'></span>Poultry</li>
+      <li><span style='background:#240000;'></span>Beans</li>
+      <li><span style='background:#3F401D;'></span>Herbs</li>
+      <li><span style='background:#8C5625;'></span>Nuts</li>
+      <li><span style='background:#568C61;'></span>Plants</li>
+      <li><span style='background:#EB2900;'></span>Wine</li>
+      <li><span style='background:#EB8C4C;'></span>Tofu</li>
+      <li><span style='background:#FFCC69;'></span>Bakedgoods</li>
+      <li><span style='background:#CEFF96;'></span>Organic</li>
+      <li><span style='background:#FF8AB5;'></span>Soap</li>
+      <li><span style='background:#FF4216;'></span>Meat</li>
+      <li><span style='background:#0C0000'></span>Coffee</li>
+      <li><span style='background:#70EDFF;'></span>Seafood</li>
+      <li><span style='background:#FF4216;'></span>Eggs</li>
+      <li><span style='background:#319E0E;'></span>Vegetables</li>
+      <li><span style='background:#A750FF;'></span>Crafts</li>
+      <li><span style='background:#AF0063;'></span>Juices</li>
+      <li><span style='background:#909E0E;'></span>Trees</li>
+      <li><span style='background:#A4720E;'></span>Maple</li>
+      <li><span style='background:#FFBE00;'></span>Cheese</li>
+      <li><span style='background:#7097FF;'></span>Flowers</li>
+      <li><span style='background:#8F5C00;'></span>Grains</li>
+      <li><span style='background:#A6A17F;'></span>Mushrooms</li>
+      <li><span style='background:#CF8D6C;'></span>Honeys</li>
+      <li><span style='background:#5D886C;'></span>Prepared</li>
+      <li><span style='background:#46003E;'></span>Jams</li>
+      <li><span style='background:#BFCF33;'></span>Fruits</li>
+      <li><span style='background:#254038;'></span>WildHarvested</li>
+     </ul>
+   </div>
+  <div id="mapid"></div>
+  <div id='map' style='width: 1000px; height: 800px;'></div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoiamxvd2VyeSIsImEiOiJjajF2ZXV2b2EwMDAyMzNueWF3aTVxdXV2In0.5N3v5tCa5___XS4mG2r4Ew';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v9',
 
-<div id='map' style='width: 1000px; height: 800px;'></div>
-<script>
-  mapboxgl.accessToken = 'pk.eyJ1Ijoiamxvd2VyeSIsImEiOiJjajF2ZXV2b2EwMDAyMzNueWF3aTVxdXV2In0.5N3v5tCa5___XS4mG2r4Ew';
-  var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9',
+    });
+  </script>
 
-  });
-</script>
-
-
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script scr="js/us-states.js"></script>
-   <!-- <script src="leaflet/leaflet.js"></script> -->
-   <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
-   <script src="js/script.js"></script>
-
-   <div>
-   <div class= "my-legned">
-   <div class='legend-title'>funding Data</div>
-   <div class='legend-scale'>
-      <ul class='legend-labels'>
-        <li><span style='background:#FFEEBC;'></span>Poultry</li>
-        <li><span style='background:#240000;'></span>Beans</li>
-        <li><span style='background:#3F401D;'></span>Herbs</li>
-        <li><span style='background:#8C5625;'></span>Nuts</li>
-        <li><span style='background:#568C61;'></span>Plants</li>
-        <li><span style='background:#EB2900;'></span>Wine</li>
-        <li><span style='background:#EB8C4C;'></span>Tofu</li>
-        <li><span style='background:#FFCC69;'></span>Bakedgoods</li>
-        <li><span style='background:#CEFF96;'></span>Organic</li>
-        <li><span style='background:#FF8AB5;'></span>Soap</li>
-        <li><span style='background:#FF4216;'></span>Meat</li>
-        <li><span style='background:#0C0000'></span>Coffee</li>
-        <li><span style='background:#70EDFF;'></span>Seafood</li>
-        <li><span style='background:#FF4216;'></span>Eggs</li>
-        <li><span style='background:#319E0E;'></span>Vegetables</li>
-        <li><span style='background:#A750FF;'></span>Crafts</li>
-        <li><span style='background:#AF0063;'></span>Juices</li>
-        <li><span style='background:#909E0E;'></span>Trees</li>
-        <li><span style='background:#A4720E;'></span>Maple</li>
-        <li><span style='background:#FFBE00;'></span>Cheese</li>
-        <li><span style='background:#7097FF;'></span>Flowers</li>
-        <li><span style='background:#8F5C00;'></span>Grains</li>
-        <li><span style='background:#A6A17F;'></span>Mushrooms</li>
-        <li><span style='background:#CF8D6C;'></span>Honeys</li>
-        <li><span style='background:#5D886C;'></span>Prepared</li>
-        <li><span style='background:#46003E;'></span>Jams</li>
-        <li><span style='background:#BFCF33;'></span>Fruits</li>
-        <li><span style='background:#254038;'></span>WildHarvested</li>
-      </ul>
-    </div>
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script scr="js/us-states.js"></script>
+    <!-- <script src="leaflet/leaflet.js"></script> -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+    <script src="js/script.js"></script>
 
 
 

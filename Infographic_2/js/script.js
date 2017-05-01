@@ -40,8 +40,10 @@ map.on('load', function () {
 
     map.addLayer({
        'id': 'Circles1',
-       'type': 'Circles',
-       'source': 'Circles1',
+       'type': 'circle',
+        'source': {
+            type: 'vector'
+        },
        'layout': {
            'visibility': 'visible'
        },
@@ -54,8 +56,10 @@ map.on('load', function () {
 
    map.addLayer({
        'id': 'Circles2',
-       'type': 'Circles',
-       'source': 'Circles2',
+       'type': 'circle',
+       'source': {
+           type: 'vector'
+       },
        'source-layer': 'Circles',
        'layout': {
            'visibility': 'visible',
@@ -69,8 +73,10 @@ map.on('load', function () {
    });
   map.addLayer({
     'id': 'Circles3',
-    'type': 'Circles',
-    'source': 'Circles3',
+    'type': 'circle',
+    'source': {
+        type: 'vector'
+    },
     'source-layer': 'Circles',
     'paint': {
       // make circles larger as the user zooms from z12 to z22
@@ -80,7 +86,7 @@ map.on('load', function () {
       },
       // color circles by ethnicity, using data-driven styles
       'circle-color': {
-        property: 'Harvest',
+        property: 'Location',
         type: 'categorical',
         stops: [
           ['Poultry', '#FFEEBC'],
@@ -117,7 +123,7 @@ map.on('load', function () {
   });
 });
 
-var toggleableLayerIds = [ 'Circles1', 'Circles2', 'Circles2' ];
+var toggleableLayerIds = [ 'Circles1', 'Circles2', 'Circles3' ];
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
     var id = toggleableLayerIds[i];
@@ -146,3 +152,8 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
     var layers = document.getElementById('menu');
     layers.appendChild(link);
 }
+
+var colorList = [
+  ['Poultry', '#FFEEBC'],
+
+]
