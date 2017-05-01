@@ -1,1 +1,121 @@
-#mapid { height: 180px; }
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #CBCBCC;
+}
+
+h1, ol {
+  text-align: center;
+  font-family: sans-serif;
+  margin:0 0 0 0;
+  padding: 1em 0 1em 0;
+}
+
+/*#mapid { height: 500px; }*/
+#map { position:absolute; top:0; bottom:0; width:100%;}
+
+
+#menu {
+      background: #fff;
+      position: absolute;
+      z-index: 1;
+      top: 10px;
+      right: 10px;
+      border-radius: 3px;
+      width: 120px;
+      border: 1px solid rgba(0,0,0,0.4);
+      font-family: 'Open Sans', sans-serif;
+  }
+
+  #menu a {
+      font-size: 13px;
+      color: #404040;
+      display: block;
+      margin: 0;
+      padding: 0;
+      padding: 10px;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0,0,0,0.25);
+      text-align: center;
+  }
+
+  #menu a:last-child {
+      border: none;
+  }
+
+  #menu a:hover {
+      background-color: #12865C;
+      color: #404040;
+  }
+
+  #menu a.active {
+      background-color:#12865C;
+      color: #ffffff;
+  }
+
+  #menu a.active:hover {
+      background: #3074a4;
+  }
+
+  .map-legend ul {
+    list-style: none;
+    padding-left: 0;
+    }
+.my-legend {
+  max-width: 200px;
+}
+  .map-legend.swatch {
+  width:20px;
+  height:20px;
+  float:right;
+  margin-right:10px;
+  }
+
+  .my-legend .legend-title {
+    text-align: right;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 90%;
+  }
+  .my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 6px;
+    padding: 0;
+    float: left;
+    list-style:  none;
+  }
+  .my-legend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+  }
+
+  .my legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 6px;
+    margin-left: 0;
+    border: 1px solid #0D1713;
+  }
+
+  .my-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+    }
+
+  .my-legend a {
+    color: #777;
+  }
+
+.marker {
+  display: block;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
