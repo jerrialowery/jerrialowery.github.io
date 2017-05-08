@@ -71,13 +71,22 @@ map.on('load', function () {
          'circle-color': 'rgba(55,148,179,1)'
        }
    });
+
+  //  map.on('load', function () {
+  //    map.addSource('icons', {
+  //        type: 'vector',
+  //        url: 'mapbox://jlowery.cj1wtzcxk00az33quo3z4533t-6q6qb'
+  //    });
+
+
   map.addLayer({
-    'id': 'Circles3',
+    'id': 'jlowery.cj1wtzcxk00az33quo3z4533t-6q6qb',
     'type': 'circle',
     'source': {
         type: 'vector'
+        // url: 'mapbox://jlowery.cj1wtzcxk00az33quo3z4533t-6q6qb'
     },
-    'source-layer': 'Circles',
+    'source-layer': 'Export_-_Export',
     'paint': {
       // make circles larger as the user zooms from z12 to z22
       'circle-radius': {
@@ -89,7 +98,7 @@ map.on('load', function () {
         property: 'Location',
         type: 'categorical',
         stops: [
-          ['Poultry', '#FFEEBC'],
+          ['Poultry', '#e55e5e'],
           ['Beans', '#240000'],
           ['Herbs', '#3F401D'],
           ['Nuts', '#8C5625'],
@@ -122,38 +131,3 @@ map.on('load', function () {
     }
   });
 });
-
-var toggleableLayerIds = [ 'Circles1', 'Circles2', 'Circles3' ];
-
-for (var i = 0; i < toggleableLayerIds.length; i++) {
-    var id = toggleableLayerIds[i];
-
-    var link = document.createElement('a');
-    link.href = '#';
-    link.className = 'active';
-    link.textContent = id;
-
-    link.onclick = function (e) {
-        var clickedLayer = this.textContent;
-        e.preventDefault();
-        e.stopPropagation();
-
-        var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
-
-        if (visibility === 'visible') {
-            map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-            this.className = '';
-        } else {
-            this.className = 'active';
-            map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-        }
-    };
-
-    var layers = document.getElementById('menu');
-    layers.appendChild(link);
-}
-
-var colorList = [
-  ['Poultry', '#FFEEBC'],
-
-]
