@@ -1,0 +1,818 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 2000px;
+  background-image: linear-gradient(#FEFFFF, #DFCEFF);
+    hsla(0,0%,0%,.3);
+  }
+  /* .zoom {
+    zoom: 100%;
+  } */
+
+  .button1 {
+    background-color: #963cfc;
+    border: none;
+    text-decoration: none;
+    font-family: 'Clear Sans';
+    padding: 12px 20px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    font-size: 14px;
+    list-style-type: none;
+    color: white;
+  }
+
+  a.button1:hover {
+
+     background-color: #77f04a;
+
+  }
+
+form {
+  padding-top: 80px;
+}
+
+  .button3 {
+
+      background-color: #963cfc;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+      margin-top: 20px;
+      text-decoration: none;
+      font-family: 'Clear Sans';
+      font-size: 14px;
+      font-weight: 200;
+
+}
+
+a.button3:hover {
+
+   background-color: #77f04a;
+
+}
+
+}
+.glitch {
+  color: black;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 200px;
+  font-family: 'Clear Sans';
+  font-weight: 300;
+  animation: noise-anim 2s infinite linear alternate-reverse;
+  transform: translate(0);
+
+}
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(1px, 1px);
+  }
+  40% {
+    transform: translate(-4px, 2px);
+  }
+  60% {
+    transform: translate(1px, 3px);
+  }
+  80% {
+    transform: translate(2px, -1px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+
+/* li {
+  float: right;
+  font-family: 'clear sans';
+  font-style:
+} */
+
+a {
+  display: inline-block;
+  padding: 14px;
+}
+
+
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding-right: 120px;
+   overflow: hidden;
+   font-weight: bold;
+   font-family: 'Clear Sans';
+
+}
+
+.nav li {
+   float: right;
+}
+
+li a {
+   display: block;
+   color: black;
+   text-align: center;
+   padding: 18px 24px;
+   text-decoration: none;
+}
+
+li a:hover {
+   color: #77f04a;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+
+}
+
+$div {
+  width: 100%;
+  height: 100vh;
+  background: #111;
+}
+
+::-webkit-scrollbar {width: 6px;}
+::-webkit-scrollbar-track {
+  background-color: rgba(25, 25, 25, 0.2);
+
+}
+::-webkit-scrollbar-thumb {
+  background-color:  #963cfc;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#scroll-down-container {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 20px;
+  p{
+    color:black;
+    margin: 0;
+  }
+}
+
+.arrow {
+  display: inline-block;
+  background-color: #963cfc;
+  border-radius: 10px;
+  width:30px;
+  height:4px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  margin-bottom: 100px;
+}
+
+#point1 {
+  transform-origin: 0% 50%;
+  animation: anim1 .3s ease infinite alternate;
+
+}
+
+#point2 {
+  transform-origin: 100% 50%;
+  animation: anim2 .3s ease infinite alternate;
+}
+
+@keyframes anim1 {
+  from {transform: translateX(7px) rotate(30deg);}
+  to {transform: translateX(4px) rotate(10deg);}
+}
+
+@keyframes anim2 {
+  from {transform: translateX(-7px) rotate(-30deg);}
+  to {transform: translateX(-4px) rotate(-10deg);}
+}
+
+/* .button2 {
+  background-color: #963cfc;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  display: block;
+  list-style-type: none;
+  position: relative;
+
+} */
+
+.button2
+{
+  background-color: #963cfc;
+  border: none;
+  font-family: 'Clear Sans';
+  padding: 12px 20px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  display: block;
+
+  list-style-type: none;
+  position: relative;
+}
+
+.button2 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* .button2.relative{
+  top: 50px;
+  position: relative;
+
+} */
+
+h1 {
+  position: relative;
+  margin-bottom: 3.5em;
+  margin-top: 1em;
+  line-height: 2em;
+  text-align:center;
+  color: #963cfc;
+  font-family: 'Clear Sans';
+}
+
+h2 {
+  position: relative;
+  /* margin-bottom: .5em;
+  margin-top: .5em;
+  line-height: .5em; */
+  text-align:center;
+  font-family: sans-serif;
+  color: #000000;
+  font-size: 12px;
+}
+
+form {
+  position: relative;
+  margin-bottom: 6.5em;
+  margin-top: 1em;
+  line-height: 2em;
+  text-align:center;
+  font-family: sans-serif;
+  color: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #963cfc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #77f04a;
+}
+
+/* .container {
+    border-radius: 5px;
+    background-color: #F2F0FF;
+    padding: 20px;
+} */
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+::-webkit-scrollbar {width: 6px;}
+::-webkit-scrollbar-track {
+  background-color: rgba(25, 25, 25, 0.2);
+
+}
+::-webkit-scrollbar-thumb {
+  background-color:  #963cfc;
+}
+
+p {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'clear sans';
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+ }
+
+.wrapper {
+   margin-left: 200px;
+   margin-right: 200px;
+   margin-top: 20px;
+   padding-left: 50px;
+}
+
+h3 {
+  font-family: 'Clear Sans';
+  font-weight: 300;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+h4 {
+  margin-left: ;
+  font-family:'Clear Sans';
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3.5em;
+  margin-top: 1em;
+  line-height: 2em;
+}
+
+
+h5 {
+  margin-left: ;
+  font-family:'Clear Sans';
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3.5em;
+  margin-top: 1em;
+  line-height: 2em;
+}
+
+h6 {
+
+  font-family:'Clear Sans';
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: auto;
+
+}
+
+ .card {
+ background: #fff;
+ border-radius: 2px;
+ display: inline-block;
+ height: 300px;
+ margin: 1rem;
+ width: 300px;
+ overflow-y: scroll;
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ /* word-break: break-all; */
+ text-align: center;
+}
+
+.card-1 {
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ overflow-y: scroll;
+ /* word-break: break-all; */
+ text-align: center;
+
+}
+
+.card-2 {
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+   overflow-y: scroll;
+   word-break: break-all;s
+
+}
+
+.card-3 {
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ overflow-y: scroll;
+ word-break: break-all;
+}
+
+.card-4{
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ overflow-y: scroll;
+ word-break: break-all;
+}
+
+.card-5 {
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ overflow-y: scroll;
+ word-break: break-all;
+}
+.card-6 {
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ overflow-y: scroll;
+ word-break: break-all;
+}
+
+.card-7 {
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ overflow-y: scroll;
+ word-break: break-all;
+}
+.card-8 {
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ overflow-y: scroll;
+ word-break: break-all;
+}
+
+.card-9 {
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ overflow-y: scroll;
+ word-break: break-all;
+}
+
+.card-10 {
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ overflow-y: scroll;
+ word-break: break-all;
+}
+
+.card-11 {
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ overflow-y: scroll;
+ word-break: break-all;
+}
+
+.card-12 {
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ overflow-y: scroll;
+ word-break: break-all;
+}
+
+.card-13 {
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+ overflow-y: scroll;
+ word-break: break-all;
+}
+
+::-webkit-scrollbar {width: 6px;}
+::-webkit-scrollbar-track {
+ background-color: rgba(25, 25, 25, 0.2);
+
+
+}
+::-webkit-scrollbar-thumb {
+ background-color:  #963cfc;
+}
+
+.img2 {
+  margin-top: 40px;
+}
+
+
+fieldset {
+    display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: black;
+    border-image: initial;
+    width: 800px;
+    background-color: white;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.pagination.center {
+    /* left: 55%; */
+    margin-top: -50px;
+}
+.pagination.center,
+.pagination.center ul {
+    float: left;
+    position: relative;
+}
+.pagination.center { left: 55%; }
+.pagination.center ul { left: -50%; }
+
+.pagination a {
+    color: black;
+    /* float: left; */
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'Clear Sans';
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid black;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: medium;
+}
+
+/* ol {
+
+margin-right: auto;
+margin-left: auto;
+padding-bottom: 200px;
+
+} */
+.pagination a.active {
+   background-color: #77f04a;
+   color: #963cfc;
+}
+.pagination a:hover:not(.active) { background-color: white; }
+
+input[type=submit] {
+    background-color: #963cfc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+}
+
+
+
+.Overview {
+
+  float: left;
+  font-family: 'Clear Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  padding-left: 200px;
+  padding-right: 300px;
+  width: 90%;
+  line-height: 1.6;
+
+}
+.OverviewHeader {
+
+  font-family: 'Clear Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.instructions {
+  font-family: 'Clear Sans';
+  font-size: 14px;
+  text-align: center;
+  font-weight: 200;
+
+}
+
+.OverviewHeader2 {
+    /* float: left; */
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    width: 100%;
+    /* padding-left: 200px; */
+    /* padding-right: 300px; */
+    text-align: center;
+    padding-top: 8;
+    color: #77f04a;
+}
+.OverviewPageHeader {
+  float: left;
+  font-family: 'Clear Sans';
+  padding-left: 200px;
+  padding-right: 300px;
+  margin-bottom: -100px;
+}
+
+.CookiesOverview {
+  text-align: center;
+    font-family: 'Clear Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding-left: 200px;
+    padding-right: 300px;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.Thankyou {
+  text-align: center;
+  font-size: 50px;
+  margin-right:auto;
+  margin-left: auto;
+  margin-top: 80px;
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+element.style {
+    margin: 0px;
+    background: white;
+}
+
+.Response{
+  text-align: center;
+  font-family: 'Clear Sans';
+  font-size: 16px;
+  color: black;
+  margin-bottom: 1.5em;
+}
+.set2 {
+    display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: black;
+    border-image: initial;
+    width: 800px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200;
+}
+
+.Container2{
+  display: flex;
+  justify-content: center;
+
+}
+.Container4{
+  margin-top: -100;
+  justify-content: center;
+
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container3 {
+    position: relative;
+    /* display: none; */
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+.Posters{
+  text-align: center;
+}
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
